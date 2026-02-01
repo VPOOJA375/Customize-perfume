@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2b1055, #7597de);
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 320px;
+    animation: fade 0.6s ease;
+}
+
+.hero-img {
+    width: 180px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.choice button {
+    width: 250px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    color: rgb(71, 1, 1);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
