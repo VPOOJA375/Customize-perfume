@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luxe Perfume</title>
+    <link rel="stylesheet" href="perfume.css">
+</head>
+<body>
+
+<div class="slide active" id="slide1">
+    <div class="card">
+        <img src="C:\Users\user\Desktop\perfume\ChatGPT Image Feb 1, 2026, 12_38_34 PM.png" class="hero-img">
+        <h1>LUXE PERFUME</h1>
+        <p>Create your signature scent ✨</p>
+        <button onclick="nextSlide(2)">Customize Now</button>
+    </div>
+</div>
+
+<div class="slide" id="slide2">
+    <div class="card">
+        <h2>Who is it for?</h2>
+        <div class="choice">
+            <button onclick="selectType('Men')"><h2> Men </h2></button>
+            <button onclick="selectType('Women')"><h2> Women </h2></button>
+            <button onclick="selectType('Adult')"><h2> Adult </h2></button>
+            <button onclick="selectType('Teen')"><h2> Teen </h2></button>
+            <button onclick="selectType('Kids')"><h2> Kids </h2></button>
+        </div>
+    </div>
+</div>
+
+<div class="slide" id="slide3">
+    <div class="card">
+        <h2>Customize Your Perfume</h2>
+
+        <select id="fragrance">
+            <option>🌸 Floral</option>
+            <option>🌲 Woody</option>
+            <option>🍊 Citrus</option>
+            <option>🍦 Vanilla</option>
+        </select>
+
+        <select id="intensity">
+            <option>💨 Light</option>
+            <option>🔥 Medium</option>
+            <option>💥 Strong</option>
+        </select>
+
+        <select id="size">
+            <option>30ml</option>
+            <option>50ml</option>
+            <option>100ml</option>
+        </select>
+
+        <button onclick="orderPerfume()">Order Now</button>
+    </div>
+</div>
+
+<div class="slide" id="slide4">
+    <div class="card">
+        <h2>🎉 Order Confirmed!</h2>
+        <p id="orderDetails"></p>
+        <button onclick="nextSlide(1)">Create Another</button>
+    </div>
+</div>
+
+<script src="perfume.js"></script>
+</body>
+</html>
